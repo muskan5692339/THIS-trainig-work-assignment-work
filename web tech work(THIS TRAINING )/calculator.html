@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <style>
+      h1{
+        margin-top: 12px;
+        text-align: center;
+      }
+        #calc {
+
+            border: 2px solid blueviolet;
+            height: 500px;
+            width: 700px;
+            margin-top: 150px;
+            color: rgb(236, 18, 18);
+            background-color: aquamarine;
+        }
+
+        #inputs {
+            margin-top: 15px;
+        }
+
+        .digit {
+            width: 100px;
+            margin: 10px;
+        }
+      
+    </style>
+
+</head>
+
+<body>
+  <div>
+  <h1> Welcome to My Calculator :) </h1></div>
+  <marquee width="60%" direction="left" height="100px">
+    <h2>This sample work of HTML CSS JS and Bootstrap enjoy the work</h2>
+    </marquee>
+    <div id="calc" class="container">
+
+        <div id="inputs" class="container">
+            First Number: <input type="number" name="first" id="first" placeholder="click me for input"  onclick="firstInputSelected()">
+            Second Number: <input type="number" name="second" id="second" placeholder="click me for input" onclick="secondInputSelected()">
+        </div>
+
+        <div class="container row" style="margin-top: 30px;">
+            <div class="col-8">
+
+                <div class="row">
+                    <div class="col-4"> <input type="button" value="1" class="btn btn-danger digit"
+                            onclick="onPressDigitButton(1)"></div>
+                    <div class="col-4"><input type="button" value="2" class="btn btn-danger digit"
+                            onclick="onPressDigitButton(2)"></div>
+                    <div class="col-4"><input type="button" value="3" class="btn btn-danger digit"
+                            onclick="onPressDigitButton(3)"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4"><input type="button" value="4" class="btn btn-danger digit"
+                            onclick="onPressDigitButton(4)"></div>
+                    <div class="col-4"><input type="button" value="5" class="btn btn-danger digit"
+                            onclick="onPressDigitButton(5)"></div>
+                    <div class="col-4"><input type="button" value="6" class="btn btn-danger digit"
+                            onclick="onPressDigitButton(6)"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4"><input type="button" value="7" class="btn btn-danger digit"
+                            onclick="onPressDigitButton(7)"></div>
+                    <div class="col-4"><input type="button" value="8" class="btn btn-danger digit"
+                            onclick="onPressDigitButton(8)"></div>
+                    <div class="col-4"><input type="button" value="9" class="btn btn-danger digit"
+                            onclick="onPressDigitButton(9)"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4"><input type="button" value="0" class="btn btn-danger digit"
+                            onclick="onPressDigitButton(0)"></div>
+                    <div class="col-4"></div>
+                </div>
+
+            </div>
+            <div class="col-4">
+                <input type="button" value="Addition" class="btn btn-primary" onclick="add()"><br><br>
+                <input type="button" value="Subtraction" class="btn btn-primary" onclick="sub()"><br><br>
+                <input type="button" value="Multiply" class="btn btn-primary" onclick="mul()"><br><br>
+                <input type="button" value="Division" class="btn btn-primary" onclick="div()"><br><br>
+                <input type="button" value="Power" class="btn btn-primary" onclick="pow()"><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <input type="button" value="Clear" class="btn btn-warning" onclick="clearAll()">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="calcu.js" />
+
+    </body>
+
+</html>
