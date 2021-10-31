@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+
+        function validateInputs() {
+            const nameText = document.getElementById("name");
+            const nameVal = nameText.value;
+
+            const ageText = document.getElementById("age");
+            const ageVal = Number(ageText.value);
+
+            const emailText = document.getElementById("email");
+            const emailVal = emailText.value;
+
+            const passText = document.getElementById("pass");
+            const passVal = passText.value;
+
+            const cPassText = document.getElementById("cpass");
+            const cPassVal = cPassText.value;
+
+            if (!nameVal) {
+                alert('Please provide value for Name');
+                return;
+            }
+            if (nameVal.length > 25) {
+                alert('Name cannot be exeeded by 25 chars');
+                return;
+            }
+
+           
+            if (isNaN(ageVal)) {
+                alert('Please enter numeric digits only');
+                return;
+            }
+            if (ageVal < 18 || ageVal >99) {
+                alert('Please enter valid age between 18 to 99');
+                return;
+            }
+
+            if (!emailVal) {
+                alert('Please provide value for Email');
+                return;
+            }
+            if (!passVal) {
+                alert('Please provide value for Password');
+                return;
+            }
+            if (!cPassVal) {
+                alert('Please provide value for Confirm Password');
+                return;
+            }
+            if (passVal != cPassVal) {
+                alert('Password and Confirm Password are not matched');
+                return;
+            }           
+
+            alert('Registeration Succesfull');
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+
+
+    <div>
+        <h1>Enter Your Details:</h1>
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"> <br><br>
+
+            <label for="age">Age</label>
+            <input type="text" name="age" id="age"> <br><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"> <br><br>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="pass"> <br><br>
+
+            <label for="confirm">Confirm Password</label>
+            <input type="text" name="confirm" id="cpass"> <br><br>
+
+            <input type="button" value="Registe" onclick="validateInputs()"> | <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+
+</html>
