@@ -1,0 +1,254 @@
+You're invited to a Teams meeting!
+
+THBS Bootcamp Training by Alchemy Solutions - Batch 89
+
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTliNmExYTYtMTYxMi00NmYwLWFlNDAtNjMxMmY2MjQ2MTc0%40thread.v2/0?context=%7b%22Tid%22%3a%2239d5b779-8b24-4e1d-b86d-94df66abc1e6%22%2c%22Oid%22%3a%2203f5c4bd-912f-425d-87c5-df1cb52a189a%22%7d
+
+Tap on the link or paste it in a browser to join.
+
+Batch 89
+
+-----------------------------------------------------------------------------------------------------
+Attendence
+https://docs.google.com/spreadsheets/d/1DIQfqfoXhk5HBV406wRy9ieZ8xof_B-Fn9UgZ9LlAgs/edit#gid=2107811133
+
+---------------------------------------------------
+2. CSS (Cascading Style sheet)
+---------------------------------
+
+	selector
+	{
+		declaration1;
+		declaration2;
+		-----
+		-----
+		-----	
+	}
+	
+Basic Selectors:
+-------------------
+1. tag name
+2. id 
+3. class
+
+---------------------------------------------
+In how many way, we can use CSS in our HTML page.
+
+1. Internal CSS:
+-------------------
+			
+	<head>
+			<style>
+			
+				// CSS code
+			
+			</style>
+	</head>
+
+
+
+2. External CSS:
+--------------------
+ <link rel="stylesheet" type="text/css" href="myStyle.css" />
+
+3. Inline CSS:
+----------------
+  <h1 style="color: yellow ; font-size:75px;" > Inline CSS demo </h1>
+  
+  --------------------------------------------------
+  Browser CSS -> External CSS -> Internal CSS -> Inline CSS
+
+-----------------------------------------------------------------
+
+JavaScript:
+---------------
+data types in JS:
+------------------
+1. number
+2. text / string
+3. boolean
+4. undefined
+5. null
+
+6. array
+7. object
+
+----------------------------------------------
+WAP to print "Hello World":
+-----------------------------
+console.log('Hello World')
+
+
+-----------------------------------------------------------------------
+Java is statically typed language and JS is dynamically typed language.
+
+In Java:
+------------
+int x =10;  // OK
+	x = 10.0; // Error
+	x =15; // OK
+	x = false; // Error
+	x ="Hi"; // Error
+
+In JS:
+------------
+  y = 10; // number
+  y = true; // boolean
+  y = 'Hello';  string
+
+
+ z
+ console.log(z)
+ typeof(z)
+ 
+ -----------------------------------------------------------------
+ Operators in JS:
+ ---------------
+ 1. Arithmetic Operators:
+ ==============================
+ +, -, *, /, %, **
+ 
+ Example:
+ ---------
+ var x =10;
+ var y = 3;
+ 
+console.log(x + y); // 13
+console.log(x - y); // 7
+console.log(x * y); // 30
+console.log(x / y); // 3 or 3.3333
+console.log(x % y); // 1 (remender)
+console.log(x ** y); // 1000 (power)
+ 
+ 
+2. Comparision Operators:
+==============================
+<, <=, >, >=, ==, !=, ===, !==
+ 
+ var x =10;
+ var y = 3;
+ 
+console.log(x > y);  // true
+console.log(x >= y); // true
+console.log(x < y); // false
+console.log(x <= y); // false
+
+var a = 99; // number
+var b = '99'; // string
+
+
+//Compare only value, Ignoring the type.
+console.log(a == b); // true
+console.log(a != b); // false
+
+
+//Compare value along the type.
+console.log(a === b); // false
+console.log(a !== b); // true
+
+3. NaN(Not a Number):
+=========================
+var x = 0/0;
+console.log(x); //NaN
+
+4. Logical Operators:
+========================
+&&(And), ||(Or), !(Not)  
+
+var x =10;
+var y =20;
+
+ b1 = (x < 10) && (x !=5); // -> false && true -> false
+ 
+------------------------------------------------------------------------
+
+=> Conditional Statements:
+-----------------------------
+1. if
+2. if-else
+3. else if
+
+=========================================
+=> Iterative statements:
+--------------------------
+for loop
+while loop
+*) for in loop
+
+1. For Loop:
+---------------
+ var sum =0;
+ 
+ for(var i =1; i < 11 ; i++)
+	{
+	sum = sum + i;
+	}
+
+console.log('SUM: '+ sum);
+
+2. While Loop:
+---------------
+ var sum =0;
+ var i =1;
+ 
+ while( i < 11 )
+	{
+	sum = sum + i;
+	
+	i++;
+	}
+
+console.log('SUM: '+ sum);
+--------------------------------------
+var x= 'b' + 'a' + 1 + 1 ; => 'ba' + 1 + 1 => 'ba' + '1' + 1 => 'ba1' + 1=> 'ba1'+ '1'=> 'ba11'
+
+
+var y = 1 + 1 + 'b' + 'a' => 2 + 'b' + 'a' =>'2'+'b'+'a' => '2b' + 'a' => '2ba'
+
+
+var z = 'a' + 'b' + + 1; // 'abNaN1'
+================================================================================
+Spring Framework:
+------------------
+ -> Java Bean | POJO | Model | Entity
+ 
+ public class Employee
+ {
+	private String name;
+	private int age;
+	private double salary;
+	
+	// getter & setter
+  
+ }
+
+ -> Spring Bean is Spring manged java bean.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
